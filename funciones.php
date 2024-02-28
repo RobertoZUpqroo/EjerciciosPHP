@@ -53,7 +53,6 @@ function mostrar_formulario() {
     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["dato"])) {
         // Si se envió el formulario, procesa los datos y muestra el resultado
         $dato = $_GET["dato"];
-        echo "<div class='container'>";
         echo "<h2>Resultado del Formulario</h2>";
         echo "<p>Dato ingresado: $dato</p>";
         echo "<form action='index.php#formulario' method='GET'>";
@@ -62,8 +61,6 @@ function mostrar_formulario() {
         echo "</div>";
     } else {
         // Si no se envió el formulario, muestra el formulario
-        echo "<div class='container' id='formulario'>";
-        echo "<h2>Formulario</h2>";
         echo "<form action='index.php#formulario' method='GET'>";
         echo "<label for='dato'>Ingrese un dato:</label>";
         echo "<input type='text' name='dato' id='dato' required>";

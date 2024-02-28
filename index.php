@@ -88,7 +88,7 @@
         }
 
         #formulario input[type="text"] {
-            width: 100%;
+            width: 90%;
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ddd;
@@ -135,6 +135,7 @@
         <a href="#ejercicio2">Ejercicio 2</a>
         <a href="#ejercicio3">Ejercicio 3</a>
         <a href="#ejercicio4">Ejercicio 4</a>
+        <a href="#formulario">Formulario</a>
     </div>
 
     <div class="container" id="ejercicio1">
@@ -163,12 +164,15 @@
         imprimir_array($arrayEjemplo);
         ?>
     </div>
-
-    <?php
-
-    // Llama a la función mostrar_formulario
-    mostrar_formulario();
-    ?>
+    <div class="container" id="formulario">
+        <h2>Formulario</h2>
+        <p>Recibe datos en un formulario tipo GET y los imprime</p>
+        <?php
+        // Llama a la función mostrar_formulario
+        mostrar_formulario();
+        ?>  
+    </div>
+    
 
 </body>
 </html>
